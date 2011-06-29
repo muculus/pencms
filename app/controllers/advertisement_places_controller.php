@@ -2,6 +2,7 @@
 class AdvertisementPlacesController extends AppController {
 
 	var $name = 'AdvertisementPlaces';
+	//sala githubs
 
 	function admin_paging() {
 		$this->AdvertisementPlace->recursive = 0;
