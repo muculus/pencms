@@ -1,0 +1,125 @@
+/*
+# ------------------------------------------------------------------------
+# JA News Frontpage module for Joomla 1.5
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2010 JoomlArt.com. All Rights Reserved.
+# @license - PHP files are GNU/GPL V2. CSS / JS are Copyrighted Commercial,
+# bound by Proprietary License of JoomlArt. For details on licensing, 
+# Please Read Terms of Use at http://www.joomlart.com/terms_of_use.html.
+# Author: JoomlArt.com
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# Redistribution, Modification or Re-licensing of this file in part of full, 
+# is bound by the License applied. 
+# ------------------------------------------------------------------------
+*/
+
+#ja-zinfpwrap { border-bottom: 1px solid #ddd; }
+
+#ja-zinfp { background: url(dot.gif) repeat-y 50%; }
+
+/* LAYOUT: TELINE II
+--------------------------------------------- */
+/* Featured News ----*/
+.ja-zinfp-featured {
+	width: 50%;
+	background: url(dot.gif) repeat-y right #EBF2F7;
+	overflow: hidden;
+}
+
+.ja-zinfp-featured h4.ja-zintitle {
+	margin: 0 0 5px !important;
+	padding: 0 !important;
+	font-size: 175%;
+}
+
+.ja-zinfp-featured img {
+	margin: 0 0 10px !important;
+	padding: 0 !important;
+}
+
+.ja-zinfp-featured .ja-zincontent {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: 1px solid #ddd;
+}
+
+/* Normal News ----*/
+.ja-zinfp-normal { width: 50%; }
+
+.ja-zinfp-normal .ja-zincontent img {
+	float: right;
+	margin: 5px 0 5px 10px !important;
+}
+
+.ja-zinfp-normal .ja-zincontent {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-top: 1px solid #ddd;
+}
+
+/* Misc. ----*/
+#ja-zinfp .first {
+	border-top: 0;
+}
+
+/* LAYOUT: TELINE III
+--------------------------------------------- */
+.ja-zinfp-normal .inactive img,
+.ja-zinfp-normal .inactive p {
+	display: none;
+}
+
+.ja-zinfp-normal .active img,
+.ja-zinfp-normal .active p {
+	display: block;
+}
+
+/* LAYOUT: HEADLINES
+--------------------------------------------- */
+#ja-zinhlwrap {
+	border-bottom: 1px solid #ddd;
+	margin-right: 1px;
+}
+
+.ja-zincontent .inner {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#ja-zinhlwrap h4.ja-zintitle {
+	font-size: 175%;
+}
+
+.ja-zincontent img {
+	margin-right: 15px;
+}
+
+/* Control bar --- */
+.ja-zinhl-controlbar {
+	position: absolute;
+	top: 0;
+	right: 15px;
+	padding: 5px 0;
+	display: block;
+}
+
+.ja-zinhl-controlbar ul {
+	margin: 0 10px !important;
+	padding: 0 !important;
+	float: left;
+}
+
+.ja-zinhl-controlbar li {
+	margin: 0 !important;
+	padding: 0 !important;
+	background: none !important;
+	display: inline;
+}
+
+#ja-zinhl-counter {
+	background: #333;
+	color: #fff;
+	padding: 1px 5px;
+	font-size: 92%;
+	letter-spacing: 1px;
+}

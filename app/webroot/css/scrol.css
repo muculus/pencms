@@ -1,0 +1,20 @@
+#slider{}	
+#slider ul, #slider li{
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+#slider li{ 
+	/* 
+		define width and height of list item (slide)
+		entire slider area will adjust according to the parameters provided here
+	*/ 
+	width:400px;
+	height:241px;
+	overflow:hidden; 
+	}	
+	
+p#controls, p#controls2{
+	margin:0;
+	position:relative;
+	} 

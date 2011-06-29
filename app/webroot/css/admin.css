@@ -1,0 +1,575 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-size: 12px;
+	border-top-width: 30px;
+	border-top-style: solid;
+	border-top-color: #464646;
+	font: 12px Tahoma, "Lucida Sans Unicode", Tahoma, Verdana, sans-serif;
+	padding: 20px;
+	margin: 0; padding: 0;
+	background: #ddd url(/../images/body_bg.gif) repeat-x;
+
+
+}
+
+#container {
+	width: 98%;
+	margin: 0 auto;
+}
+
+#header {
+	/*background: url(/../images/header_bg.gif) no-repeat center top;*/
+	padding-top: 90px;
+	margin-bottom: 40px;
+}
+
+h1 {
+	margin-bottom: 20px;
+	font-size: 18px;
+}
+
+h2 {
+	margin-bottom: 18px;
+	font-size: 16px;
+}
+
+h3{
+	margin-bottom: 16px;
+	font-size: 14px;
+}
+
+p {
+	margin: 0;
+}
+
+a, a:link, a:visited {
+	text-decoration: none;	
+}
+	
+pre, pre+p, p+p {
+	margin: 1em 0 0;
+}
+code {
+	font-family: "Courier New", Courier, monospace;
+}
+
+#content h2 {
+	text-align: right;
+	padding-right: 50px;
+	line-height: 30px;
+	background-color: #F7F7F7;
+	border-top: 1px solid #999;
+	color: #0B55C4;
+}
+
+#oldTable {
+	margin-bottom: 20px;
+	direction: rtl;
+	text-align: right;
+}
+
+.paging {
+	float: right;
+	text-align: right;
+}
+
+#oldTable tr td, #oldTable tr th{
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-bottom: solid 1px #ccc;
+}
+
+#oldTable tr th {
+	background-color: #464646;
+	color: #FFF;
+	height: 30px;
+	line-height: 30px;
+}
+
+#oldTable tr th a:link, #oldTable tr th a:hover {
+	color: #FFF;
+}
+
+#oldTable tr.altrow {
+	background-color: #eaf3fa;
+}
+
+#oldTable tr {
+	height: 25px;
+	line-height: 25px;
+}
+
+#oldTable tr:hover {
+	background-color: #FFFFDD;
+}
+
+#oldTable tr td {
+	border-right: 1px solid #FFF;	
+}
+
+#oldTable tr th {
+	border-right: 1px solid #CCC;
+	text-align: center;
+	font-weight: bold;
+}
+
+#oldTable.properties{
+	float: left;
+}
+
+#oldTable.datatable{
+	display: block;
+}
+
+div.actions {
+	margin: 5px;
+	padding: 5px 0;	
+	height: 25px;
+}
+
+div.actions ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+div.actions li {
+	float: left;
+	margin: 0 0.15em;
+}
+
+div.actions li a{
+	font-family: tahoma, "Lucida Sans Unicode", Verdana, sans-serif;
+	display: block;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border: 1px solid #80b5d0;
+	font-size: 13px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	text-decoration: none;	
+	background-color: #F7F7F7 !important;
+	color: #246;
+	width: 100px;
+	height: 20px;
+}
+
+div.primary-actions{
+	float: left;
+	margin-left: 20px;
+}
+
+a img{
+	border-style: none;
+}
+
+a.view, a.edit, a.delete, a.add, a.index, a.hard_delete, a.undelete, a.download, a.generate{
+	background-repeat: no-repeat;
+	padding-right: 20px;
+	padding-left: 5px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	display: block;
+	width: auto;
+	direction: rtl;
+	text-align: right;
+}
+
+
+a.view{
+	background: url(../img/admin/view.gif) no-repeat 99% 50%;
+}
+
+a.edit{
+	background: url(../img/admin/edit.gif) no-repeat 99% 50%;
+}
+
+a.delete{
+	background: url(../img/admin/trash.gif) no-repeat 99% 50%;
+}
+
+a.add{
+	background: url(../img/admin/add.gif) no-repeat 100% 50%;
+}
+
+a.index{
+	background: url(../img/admin/index.gif) no-repeat 99% 50%;
+}
+
+a.hard_delete{
+	background: url(../img/admin/delete.gif) no-repeat 99% 50%;
+}
+
+a.undelete{
+	background: url(../img/admin/undo.gif) no-repeat 99% 50%;
+}
+
+a.download{
+	background-image: url(../img/admin/download.gif) no-repeat 99% 50%;
+}
+
+a.generate{
+	background-image: url(../img/admin/generate.gif) no-repeat 99% 50%;
+}
+
+.paging div{
+	display: inline;
+}
+
+/* messages */
+
+#errorMessage, #infoMessage, #authMessage, #flashMessage{
+	font-weight: bold;
+	font-size: 14px;
+	margin: 0 0 16px 8px;
+	border-width: 1px;
+	border-style: solid;
+	padding: 12px;
+}
+
+#errorMessage, #authMessage, #flashMessage{
+	background-color: #ffebe8;
+	border-color: #c00;
+}
+
+#infoMessage{
+	background-color: #ffffe0;
+	border-color: #e6db55;
+}
+
+
+/* Forms */
+.form {
+	clear: both;
+	margin: 0 10px;
+	direction: rtl;
+	/*font-weight: bold;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #eaf3fa;*/
+}
+.form fieldset {
+	border: 1px solid #ccc;
+	margin-top: 30px;
+	padding: 16px 20px;
+}
+.form fieldset legend {
+	color: #e32;
+	font-size: 160%;
+	font-weight: bold;
+}
+.form fieldset fieldset {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	padding: 16px 0;
+}
+.form fieldset fieldset legend {
+	font-size: 120%;
+	font-weight: normal;
+	margin-right: 20px;
+}
+.form fieldset fieldset div {
+	clear: right;
+	margin: 0 20px;
+}
+.form div {
+	clear: both;
+	margin-bottom: 1em;
+	padding: .5em;
+	vertical-align: text-top;
+}
+.form div.input {
+	color: #555;
+}
+
+.form input:hover {
+	border-color: #328ab2;
+}
+.form div.required {
+	color: #333;
+	font-weight: bold;
+}
+.form div.submit {
+	border: 0;
+	clear: both;
+	margin-top: 10px;
+	margin-right: 0px;
+}
+
+.form .submit input {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Verdana, sans-serif;
+	padding: 3px 5px;
+	border: none;
+	font-size: 13px;
+	border-width: 1px;
+	border-style: solid;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	cursor: default;
+	text-decoration: none;	
+	margin-top: -6px;
+	background-color: #fff !important;
+	color: #246;
+	border-color: #80b5d0;
+}
+.form .submit input:hover {
+	border-color: #328ab2;
+}
+.form label {
+	display: block;
+	font-size: 110%;
+	padding-left: 20px;
+}
+.form input, textarea {
+	clear: both;
+	display: block;
+	font-size: 140%;
+	font-family: tahoma, "lucida grande", "verdana", sans-serif;
+	padding: 2px;
+	width: 50%;
+	text-align: right;
+	direction: rtl;
+}
+.form select {
+	clear: both;
+	font-size: 120%;
+	vertical-align: text-bottom;
+}
+.form select[multiple=multiple] {
+	width: 100%;
+	height: 400px;
+}
+.form option {
+	font-size: 120%;
+	padding: 0 3px;
+}
+.form input[type=checkbox] {
+	clear: right;
+	float: right;
+	margin: 0px 6px 7px 2px;
+	width: auto;
+}
+.form input[type=submit] {
+	display: inline;
+	font-size: 110%;
+	padding: 2px 5px;
+	width: auto;
+	vertical-align: bottom;
+}
+
+#backtoblog a {
+	position: absolute;
+	top: 7px;
+	left: 15px;
+	text-decoration: none;
+}
+
+/*clear */
+
+.clear{
+	float: none;
+	clear: both;
+}
+
+/**
+ * MENU
+ */
+#menu
+{
+	height: 26px;
+	clear: both;
+	float: none;
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+	border: 1px solid #97a5b0;
+	background-image: url(../img/admin/menubar.gif);
+}
+ 
+#menuBar, #menuBar ul{
+     margin:0;
+     padding:0;
+     list-style-type:none;
+     list-style-position:outside;
+     position:relative;
+     line-height:1.5em;
+     z-index: 999;
+	 float: right;
+ }
+ 
+#menuBar a:link, #menuBar a:active, #menuBar a:visited{
+    display:block;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 14px;
+    color: #111;
+    text-decoration:none;
+	border-left: 1px solid #FFF;
+ }
+
+#menuBar a:hover{
+    background-color:#fff;
+    color:#333;
+}
+
+#menuBar li li a{
+	background-color: #f0f7fb;
+	border: 1px solid #97a5b0;
+	border-top-style: none;
+}
+
+#menuBar li{
+    float:right;
+    position:relative;
+}
+
+#menuBar ul {
+	border-top: 1px solid #97a5b0;
+    position:absolute;
+    width:12em;
+    display:none;
+}
+
+#menuBar li ul a{
+    width:12em;
+    float:right;
+}
+
+#menuBar ul ul{
+	top:auto;
+}	
+
+#menuBar li ul ul {
+    left:12em;
+    margin:0px 0 0 10px;
+}
+
+#menuBar li:hover ul ul, #menuBar li:hover ul ul ul, #menuBar li:hover ul ul ul ul{
+    display:none;
+}
+#menuBar li:hover ul, #menuBar li li:hover ul, #menuBar li li li:hover ul, #menuBar li li li li:hover ul{
+    display:block;
+}
+
+/**
+ * TABS
+ */
+
+
+ul.topnavx {
+	list-style: none;
+	padding: 0 20px;	
+	margin: 0;
+	float: right;
+	width: 100%;
+	background: #222;
+	font-size: 1em;
+	background: url(/../images/topnav_bg.gif) repeat-x;
+}
+ul.topnavx li {
+	float: right;
+	margin: 0;	
+	padding: 0 0 0 15px;
+	position: relative; /*--Declare X and Y axis base--*/
+}
+ul.topnavx li a{
+	padding: 10px 5px;
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	float: right;
+}
+ul.topnavx li a:hover{
+	background: url(/../images/topnav_hover.gif) no-repeat center top;
+}
+ul.topnavx li span { /*--Drop down trigger styles--*/
+	width: 17px;
+	height: 35px;
+	float: right;
+	background: url(/../images/subnav_btn.gif) no-repeat center top;
+}
+ul.topnavx li span.subhover {background-position: center bottom; cursor: pointer;} /*--Hover effect for trigger--*/
+ul.topnavx li ul.subnav {
+	list-style: none;
+	position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/
+	right: 0; top: 35px;
+	background: #333;
+	margin: 0; padding: 0;
+	display: none;
+	float: right;
+	width: 170px;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	border: 1px solid #111;
+	z-index: 999;
+	text-align: right;
+	direction: rtl;
+}
+ul.topnavx li ul.subnav li{
+	margin: 0; padding: 0;
+	border-top: 1px solid #252525; /*--Create bevel effect--*/
+	border-bottom: 1px solid #444; /*--Create bevel effect--*/
+	clear: both;
+	width: 170px;
+}
+html ul.topnavx li ul.subnav li a {
+	padding: 5px 5px;
+	float: right;
+	width: 145px;
+	background: #333 url(/../images/dropdown_linkbg.gif) no-repeat 98% center;
+	padding-right: 20px;
+}
+html ul.topnavx li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
+	background: #222 url(/../images/dropdown_linkbg.gif) no-repeat 98% center; 
+}
+/* ===================================*/
+#backtoblog a {
+	position: absolute;
+	top: 7px;
+	left: 15px; 
+	text-decoration: none;
+}
+
+#backtoblog a {
+	color: #ccc;
+}
+
+#backtoblog a:hover {
+	color: #fff;
+}
+
+#backtoblog span {
+	position: absolute;
+	top: 7px;
+	right: 15px;
+	color: #FFF;
+}
+
+#filterCategory {
+	float: right;
+	height: 400px;
+	width: 38%;
+	border: 1px solid #99BBE8;
+	margin-right: 10px; 
+}
+
+#filterCategory form {
+	margin: 10px;
+	padding: 10px;
+}

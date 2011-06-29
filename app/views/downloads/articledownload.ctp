@@ -1,0 +1,1 @@
+<a href="http://www.daneshfa.com/articles/view/<?php echo $article_id;?>">لينک مقاله</a>

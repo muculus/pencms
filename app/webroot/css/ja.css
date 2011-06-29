@@ -1,0 +1,197 @@
+/*
+# ------------------------------------------------------------------------
+# JA Seleni template for Joomla 1.5
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2010 JoomlArt.com. All Rights Reserved.
+# @license - PHP files are GNU/GPL V2. CSS / JS are Copyrighted Commercial,
+# bound by Proprietary License of JoomlArt. For details on licensing, 
+# Please Read Terms of Use at http://www.joomlart.com/terms_of_use.html.
+# Author: JoomlArt.com
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# Redistribution, Modification or Re-licensing of this file in part of full, 
+# is bound by the License applied. 
+# ------------------------------------------------------------------------
+*/
+
+h2.jazin-title, h4.jazin-title {
+	font-size: 125%;
+	font-family:  Tahoma, Arial, Verdana, sans-serif;
+	margin: 10px 0 5px !important;
+	padding: 0;
+	line-height: 1.1;
+	text-transform: none;
+}
+
+/* CONTENT
+--------------------------------------------- */
+#jazin-wrap {
+	padding: 0;
+	border-bottom: none;
+}
+
+#jazin {
+	padding: 0;
+	border-bottom: none;
+}
+
+.jazin-left {
+	float: left;
+	background: url(../images/vline.gif) repeat-y right;
+}
+
+.jazin-center {
+	float: left;
+	background: url(../images/vline.gif) repeat-y right;
+}
+
+.jazin-right { float: right; }
+
+.jazin-box {
+	margin: 0;
+	padding-bottom: 5px;
+}
+
+.jazin-left .jazin-box {
+	margin-left: 0;
+}
+
+.jazin-right .jazin-box {
+	margin-right: 0;
+}
+
+div.jazin-section {
+	background: url(../img/h3-bg.gif) repeat-x left bottom;
+	border: 1px solid #d5d5d5;
+	border-bottom: 1px solid #a5a5a5;
+	display: block;
+	margin-bottom: 5px;
+	text-shadow: 1px 1px 0 #fff;
+}
+
+div.jazin-section a {
+	background: none;
+	display: block;
+	float: right;
+	padding: 0;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+div.jazin-section a span {
+	background: none;
+	color: #666;
+	text-align: right;
+	text-transform: uppercase;
+	padding: 8px 10px;
+	margin: 0;
+	display: block;
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+}
+
+div.jazin-section a:hover,
+div.jazin-section a:active,
+div.jazin-section a:focus {
+	text-decoration: none;
+}
+
+.jazin-box:hover div.jazin-section a span,
+.hover div.jazin-section a span {
+	background: none;
+}
+
+.jazin-content {
+	float: right;
+	width: 34%;
+	margin-left: 15px;
+}
+
+.jazin-meta {
+	font-size: 92%;
+	color: #999999;
+	display: block;
+	clear: both;
+}
+
+.jazin-more {
+	color: #999999;
+	text-transform: uppercase;
+	display: block;
+	clear: both;
+	margin: 10px 0 2px;
+	font-size: 92%;
+	letter-spacing: 1px;
+}
+
+ul.jazin-links {
+	float: left;
+	padding: 0;
+	margin: 0;
+	width: 62%;
+}
+
+ul.jazin-links li {
+	background-position: 20px 7px !important;
+	font-size: 92%;
+	font-weight: bold;
+	padding-left: 30px !important;
+}
+
+.jazin-content img {
+	padding: 0 0 0 10px;
+}
+
+.jazin-pagedesc {
+	display: block;
+	padding: 10px;
+	margin: 10px 0;
+	font-family:tahoma;
+	font-size: 125%;
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	background: #F7F7F7;
+	font-style: italic;
+}
+
+.jazin-pagedesc p {
+	padding: 0;
+	margin: 0;
+}
+
+/*SUB PAGE HEADLINE*/
+#jazin-hlwrap-sub {
+	clear: both;
+	margin-bottom: 3px;
+}
+
+#jazin-hlwrap-sub .jazin-box,
+#jazin-hlwrap-sub .jazin-content {
+	padding: 0;
+	margin: 0;
+	background: none;
+}
+
+#jazin-hlwrap-sub h4.jazin-title {
+	font-size: 200%;
+	font-weight: normal;
+}
+
+#jazin-hlwrap-sub .article_separator {
+	height: 15px;
+	background: none;
+	border-bottom: 5px solid #ABABAB;
+	font-size: 1px;
+}
+
+/*mis
+-------------------------------------------------*/
+#jazin-fp .article_separator {
+	clear: both;
+	display: block;
+	height: 3px;
+	background: none;
+	font-size: 1px;
+}
+
+.jazin-pagenav, .jazin-pagenav-counter {
+	text-align: center;
+}

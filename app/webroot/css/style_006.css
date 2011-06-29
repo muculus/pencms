@@ -1,0 +1,41 @@
+/*------------------------------------------------------------------------
+ # $JA#PRODUCT_NAME$ - Version $JA#VERSION$ - Licence Owner $JA#OWNER$
+ # ------------------------------------------------------------------------
+ # Copyright (C) 2004-2009 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ # @license - Copyrighted Commercial Software
+ # Author: J.O.O.M Solutions Co., Ltd
+ # Websites: http://www.joomlart.com - http://www.joomlancers.com
+ # This file may not be redistributed in whole or significant part.
+ -------------------------------------------------------------------------*/
+
+ul.ja-bullettin {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+ul.ja-bullettin li {
+	margin: 0;
+	padding: 8px 0;
+	border-bottom: 1px solid #E6E6E6;
+	background: none;
+	position: relative;
+	width: 100%;
+	line-height: normal;
+}
+
+ul.ja-bullettin img {
+	position: absolute;
+	right: 0;
+	top: 8px;
+}
+
+ul.ja-bullettin div {
+	line-height: 1.2;
+	display: block;
+}
+
+ul.ja-bullettin span {
+	font-size: 85%;
+	color: #999999;
+}

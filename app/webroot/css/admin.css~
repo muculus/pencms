@@ -1,0 +1,718 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-size: 12px;
+	border-top-width: 30px;
+	border-top-style: solid;
+	border-top-color: #464646;
+	font: 12px Tahoma, "Lucida Sans Unicode", Tahoma, Verdana, sans-serif;
+	padding: 20px;
+
+}
+
+h1 {
+	margin-bottom: 20px;
+	font-size: 18px;
+}
+
+h2 {
+	margin-bottom: 18px;
+	font-size: 16px;
+}
+
+h3{
+	margin-bottom: 16px;
+	font-size: 14px;
+}
+
+p {
+	margin: 0;
+}
+
+a, a:link, a:visited {
+	text-decoration: none;	
+}
+	
+pre, pre+p, p+p {
+	margin: 1em 0 0;
+}
+code {
+	font-family: "Courier New", Courier, monospace;
+}
+
+#content h2 {
+	text-align: right;
+	padding-right: 50px;
+	line-height: 30px;
+	background-color: #F7F7F7;
+	border-top: 1px solid #999;
+	color: #0B55C4;
+}
+
+table {
+	margin-bottom: 20px;
+	direction: rtl;
+	text-align: right;
+}
+
+.paging {
+	float: right;
+	text-align: right;
+}
+
+table tr td, table tr th{
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-bottom: solid 1px #ccc;
+}
+
+table tr th {
+	background-color: #464646;
+	color: #FFF;
+	height: 30px;
+	line-height: 30px;
+}
+
+table tr th a:link, table tr th a:hover {
+	color: #FFF;
+}
+
+table tr.altrow {
+	background-color: #eaf3fa;
+}
+
+table tr {
+	height: 25px;
+	line-height: 25px;
+}
+
+table tr:hover {
+	background-color: #FFFFDD;
+}
+
+table tr td {
+	border-right: 1px solid #FFF;	
+}
+
+table tr th {
+	border-right: 1px solid #CCC;
+	text-align: center;
+	font-weight: bold;
+}
+
+table.properties{
+	float: left;
+}
+
+table.datatable{
+	display: block;
+}
+
+div.actions ul {
+	margin: 10px 0 10px 0;	
+}
+
+div.actions li{
+	list-style-type: none;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	display: inline;
+}
+
+div.primary-actions{
+	float: left;
+	margin-left: 20px;
+}
+
+a img{
+	border-style: none;
+}
+
+a.view, a.edit, a.delete, a.add, a.index, a.hard_delete, a.undelete, a.download, a.generate{
+	background-repeat: no-repeat;
+	padding-right: 20px;
+	padding-left: 5px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	display: block;
+	width: auto;
+	direction: rtl;
+	text-align: right;
+}
+
+a.bottom {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Verdana, sans-serif;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border: none;
+	font-size: 13px;
+	border-width: 1px;
+	border-style: solid;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	cursor: default;
+	text-decoration: none;	
+	margin-top: -6px;
+	background-color: #F7F7F7 !important;
+	color: #246;
+	border-color: #80b5d0;
+	display: inline;
+}
+a.view{
+	background-image: url(../img/admin/view.gif);
+	padding-left: 30px;
+}
+
+a.edit{
+	background-image: url(../img/admin/edit.gif);
+	padding-left: 20px;
+}
+
+a.delete{
+	background-image: url(../img/admin/trash.gif);
+	padding-left: 20px;
+}
+
+a.add{
+	background: url(../img/admin/add.gif) no-repeat 100% 50%;
+	padding-left: 20px;
+}
+
+a.index{
+	background-image: url(../img/admin/index.gif);
+	padding-left: 20px;
+}
+
+a.hard_delete{
+	background-image: url(../img/admin/delete.gif);
+	padding-left: 20px;
+}
+
+a.undelete{
+	background-image: url(../img/admin/undo.gif);
+	padding-left: 20px;
+}
+
+a.download{
+	background-image: url(../img/admin/download.gif);
+	padding-left: 20px;
+}
+
+a.generate{
+	background-image: url(../img/admin/generate.gif);
+}
+
+.paging div{
+	display: inline;
+}
+
+/* messages */
+
+#errorMessage, #infoMessage, #authMessage, #flashMessage{
+	font-weight: bold;
+	font-size: 14px;
+	margin: 0 0 16px 8px;
+	border-width: 1px;
+	border-style: solid;
+	padding: 12px;
+}
+
+#errorMessage, #authMessage, #flashMessage{
+	background-color: #ffebe8;
+	border-color: #c00;
+}
+
+#infoMessage{
+	background-color: #ffffe0;
+	border-color: #e6db55;
+}
+
+
+/* Forms */
+form {
+	clear: both;
+	margin-right: 20px;
+	width: 95%;
+	direction: rtl;
+	font-weight: bold;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #eaf3fa;
+}
+fieldset {
+	border: 1px solid #ccc;
+	margin-top: 30px;
+	padding: 16px 20px;
+}
+fieldset legend {
+	color: #e32;
+	font-size: 160%;
+	font-weight: bold;
+}
+fieldset fieldset {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	padding: 16px 0;
+}
+fieldset fieldset legend {
+	font-size: 120%;
+	font-weight: normal;
+	margin-right: 20px;
+}
+fieldset fieldset div {
+	clear: right;
+	margin: 0 20px;
+}
+form div {
+	clear: both;
+	margin-bottom: 1em;
+	padding: .5em;
+	vertical-align: text-top;
+}
+form div.input {
+	color: #555;
+}
+
+form input:hover {
+	border-color: #328ab2;
+}
+form div.required {
+	color: #333;
+	font-weight: bold;
+}
+form div.submit {
+	border: 0;
+	clear: both;
+	margin-top: 10px;
+	margin-right: 0px;
+}
+
+form .submit input {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Verdana, sans-serif;
+	padding: 3px 5px;
+	border: none;
+	font-size: 13px;
+	border-width: 1px;
+	border-style: solid;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	cursor: default;
+	text-decoration: none;	
+	margin-top: -6px;
+	background-color: #fff !important;
+	color: #246;
+	border-color: #80b5d0;
+}
+form .submit input:hover {
+	border-color: #328ab2;
+}
+label {
+	display: block;
+	font-size: 110%;
+	padding-left: 20px;
+}
+input, textarea {
+	clear: both;
+	display: block;
+	font-size: 140%;
+	font-family: tahoma, "lucida grande", "verdana", sans-serif;
+	padding: 2px;
+	width: 50%;
+	text-align: right;
+	direction: rtl;
+}
+select {
+	clear: both;
+	font-size: 120%;
+	vertical-align: text-bottom;
+}
+select[multiple=multiple] {
+	width: 100%;
+}
+option {
+	font-size: 120%;
+	padding: 0 3px;
+}
+input[type=checkbox] {
+	clear: right;
+	float: right;
+	margin: 0px 6px 7px 2px;
+	width: auto;
+}
+input[type=submit] {
+	display: inline;
+	font-size: 110%;
+	padding: 2px 5px;
+	width: auto;
+	vertical-align: bottom;
+}
+
+#backtoblog a {
+	position: absolute;
+	top: 7px;
+	left: 15px;
+	text-decoration: none;
+}
+
+
+/*clear */
+
+.clear{
+	float: none;
+	clear: both;
+}
+
+/**
+ * MENU
+ */
+#menu
+{
+	height: 26px;
+	clear: both;
+	float: none;
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+	border: 1px solid #97a5b0;
+	background-image: url(../img/admin/menubar.gif);
+}
+ 
+#menuBar, #menuBar ul{
+     margin:0;
+     padding:0;
+     list-style-type:none;
+     list-style-position:outside;
+     position:relative;
+     line-height:1.5em;
+     z-index: 999;
+ }
+ 
+#menuBar a:link, #menuBar a:active, #menuBar a:visited{
+    display:block;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 14px;
+    color: #111;
+    text-decoration:none;
+ }
+
+#menuBar a:hover{
+    background-color:#fff;
+    color:#333;
+}
+
+#menuBar li li a{
+	background-color: #f0f7fb;
+	border: 1px solid #97a5b0;
+	border-top-style: none;
+}
+
+#menuBar li{
+    float:left;
+    position:relative;
+}
+
+#menuBar ul {
+	border-top: 1px solid #97a5b0;
+    position:absolute;
+    width:12em;
+    display:none;
+}
+
+#menuBar li ul a{
+    width:12em;
+    float:left;
+}
+
+#menuBar ul ul{
+	top:auto;
+}	
+
+#menuBar li ul ul {
+    left:12em;
+    margin:0px 0 0 10px;
+}
+
+#menuBar li:hover ul ul, #menuBar li:hover ul ul ul, #menuBar li:hover ul ul ul ul{
+    display:none;
+}
+#menuBar li:hover ul, #menuBar li li:hover ul, #menuBar li li li:hover ul, #menuBar li li li li:hover ul{
+    display:block;
+}
+
+/**
+ * TABS
+ */
+
+/* Caution! Ensure accessibility in print and other media types... */
+@media projection, screen { /* Use class for showing/hiding tab content, so that visibility can be better controlled in different media types... */
+    .ui-tabs-hide {
+        display: none;
+    }
+}
+
+/* Hide useless elements in print layouts... */
+@media print {
+    .ui-tabs-nav {
+        display: none;
+    }
+}
+
+/* Skin */
+.ui-tabs-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0 4px 0 0;
+}
+.ui-tabs-nav:after { /* clearing without presentational markup, IE gets extra treatment */
+    display: block;
+    clear: both;
+    content: " ";
+}
+.ui-tabs-nav li {
+    float: right;
+    margin: 0 1px 0 0;
+    min-width: 84px; /* be nice to Opera */
+	background: #F7F7F7;
+	
+}
+.ui-tabs-nav a, .ui-tabs-nav a span {
+    display: block;
+    padding: 0 10px;
+ }
+.ui-tabs-nav a {
+    margin: 1px 0 0; /* position: relative makes opacity fail for disabled tab in IE */
+    padding-right: 0;
+    color: #27537a;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap; /* required in IE 6 */    
+    outline: 0; /* prevent dotted border in Firefox */
+}
+.ui-tabs-nav .ui-tabs-selected a {
+    position: relative;
+    top: 1px;
+    z-index: 2;
+    margin-top: 0;
+    color: #000;
+	background: #CCC;
+	border-top: 1px solid #999;
+}
+.ui-tabs-nav a span {
+    width: 64px; /* IE 6 treats width as min-width */
+    min-width: 64px;
+    height: 18px; /* IE 6 treats height as min-height */
+    min-height: 18px;
+    padding-top: 6px;
+    padding-left: 0;
+}
+*>.ui-tabs-nav a span { /* hide from IE 6 */
+    width: auto;
+    height: auto;
+}
+.ui-tabs-nav .ui-tabs-selected a span {
+    padding-bottom: 1px;
+}
+
+.ui-tabs-nav .ui-tabs-selected a:link, .ui-tabs-nav .ui-tabs-selected a:visited, .ui-tabs-nav .ui-tabs-disabled a:link, .ui-tabs-nav .ui-tabs-disabled a:visited { /* @ Opera, use pseudo classes otherwise it confuses cursor... */
+    cursor: text;
+}
+.ui-tabs-nav a:hover, .ui-tabs-nav a:focus, .ui-tabs-nav a:active,
+.ui-tabs-nav .ui-tabs-unselect a:hover, .ui-tabs-nav .ui-tabs-unselect a:focus, .ui-tabs-nav .ui-tabs-unselect a:active { /* @ Opera, we need to be explicit again here now... */
+    cursor: pointer;
+}
+.ui-tabs-disabled {
+    opacity: .4;
+    filter: alpha(opacity=40);
+}
+.ui-tabs-panel {
+    border: 1px solid #97a5b0;
+    padding: 1em 8px;
+    background: #fff; /* declare background color for container to avoid distorted fonts in IE while fading */
+}
+.ui-tabs-loading em {
+    padding: 0 20px 0 0;
+    background: url(loading.gif) no-repeat 0 50%;
+}
+
+/* Additional IE specific bug fixes... */
+* html .ui-tabs-nav { /* auto clear, @ IE 6 & IE 7 Quirks Mode */
+    display: inline-block;
+}
+*:first-child+html .ui-tabs-nav  { /* @ IE 7 Standards Mode - do not group selectors, otherwise IE 6 will ignore complete rule (because of the unknown + combinator)... */
+    display: inline-block;
+}
+
+/**
+ * DATEPICKER
+ */
+.ui-datepicker-div, .ui-datepicker-inline, #ui-datepicker-div {
+	/*resets*/margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none;
+	font-family: Lucida Grande, Lucida Sans, Arial, sans-serif;
+	background: #f3f3f3 url(../img/admin/datepicker/f3f3f3_40x100_textures_01_flat_0.png) 0 0 repeat-x;
+	font-size: 1.2em;
+	border: 4px solid #dddddd;
+	width: 15.5em;
+	padding: 2.5em .5em .5em .5em;
+	position: relative;
+}
+.ui-datepicker-div, #ui-datepicker-div {
+	z-index: 9999; /*must have*/
+	display: none;
+}
+.ui-datepicker-inline {
+	float: left;
+	display: block;
+}
+.ui-datepicker-control {
+	display: none;
+}
+.ui-datepicker-current {
+	display: none;
+}
+.ui-datepicker-next, .ui-datepicker-prev {
+	position: absolute;
+	left: .5em;
+	top: .5em;
+	background: #e0e0e0 url(../img/admin/datepicker/e0e0e0_40x100_textures_02_glass_80.png) 0 50% repeat-x;
+}
+.ui-datepicker-next {
+	left: 14.6em;
+}
+.ui-datepicker-next:hover, .ui-datepicker-prev:hover {
+	background: #d8d8d8 url(../img/admin/datepicker/d8d8d8_40x100_textures_02_glass_90.png) 0 50% repeat-x;
+}
+.ui-datepicker-next a, .ui-datepicker-prev a {
+	text-indent: -999999px;
+	width: 1.3em;
+	height: 1.4em;
+	display: block;
+	font-size: 1em;
+	background: url(../img/admin/datepicker/888888_7x7_arrow_left.gif) 50% 50% no-repeat;
+	border: 1px solid #cccccc;
+	cursor: pointer;
+}
+.ui-datepicker-next a {
+	background: url(../img/admin/datepicker/888888_7x7_arrow_right.gif) 50% 50% no-repeat;
+}
+.ui-datepicker-prev a:hover {
+	background: url(../img/admin/datepicker/222222_7x7_arrow_left.gif) 50% 50% no-repeat;
+}
+.ui-datepicker-next a:hover {
+	background: url(../img/admin/datepicker/222222_7x7_arrow_right.gif) 50% 50% no-repeat;
+}
+.ui-datepicker-prev a:active {
+	background: url(../img/admin/datepicker/ffffff_7x7_arrow_left.gif) 50% 50% no-repeat;
+}
+.ui-datepicker-next a:active {
+	background: url(../img/admin/datepicker/ffffff_7x7_arrow_right.gif) 50% 50% no-repeat;
+}
+.ui-datepicker-header select {
+	border: 1px solid #cccccc;
+	color: #444444;
+	background: #e0e0e0;
+	font-size: 1em;
+	line-height: 1.4em;
+	position: absolute;
+	top: .5em;
+	margin: 0 !important;
+}
+.ui-datepicker-header option:focus, .ui-datepicker-header option:hover {
+	background: #d8d8d8;
+}
+.ui-datepicker-header select.ui-datepicker-new-month {
+	width: 7em;
+	left: 2.2em;
+}
+.ui-datepicker-header select.ui-datepicker-new-year {
+	width: 5em;
+	left: 9.4em;
+}
+table.ui-datepicker {
+	width: 15.5em;
+	text-align: right;
+}
+table.ui-datepicker td a {
+	padding: .1em .3em .1em 0;
+	display: block;
+	color: #444444;
+	background: #e0e0e0 url(../img/admin/datepicker/e0e0e0_40x100_textures_02_glass_80.png) 0 50% repeat-x;
+	cursor: pointer;
+	border: 1px solid #f3f3f3;
+}
+table.ui-datepicker td a:hover {
+	border: 1px solid #888888;
+	color: #111111;
+	background: #d8d8d8 url(../img/admin/datepicker/d8d8d8_40x100_textures_02_glass_90.png) 0 50% repeat-x;
+}
+table.ui-datepicker td a:active {
+	border: 1px solid #2694e8;
+	color: #000000;
+	background: #8ab9ff url(../img/admin/datepicker/8ab9ff_40x100_textures_02_glass_50.png) 0 50% repeat-x;
+}
+table.ui-datepicker .ui-datepicker-title-row td {
+	padding: .3em 0;
+	text-align: center;
+	font-size: .9em;
+	color: #362b36;
+	text-transform: uppercase;
+}
+table.ui-datepicker .ui-datepicker-title-row td a {
+	color: #362b36;
+}
+.ui-datepicker-cover {
+	display: none;
+	display/**/: block;
+	position: absolute;
+	z-index: -1;
+	filter: mask();
+	top: -4px;
+	left: -4px;
+	width: 193px;
+	height: 200px;
+}
+
+/* ===================================*/
+#backtoblog a {
+	position: absolute;
+	top: 7px;
+	left: 15px;
+	text-decoration: none;
+}
+
+#backtoblog a {
+	color: #ccc;
+}
+
+#backtoblog a:hover {
+	color: #fff;
+}
+
+#filterCategory {
+	float: left;
+	height: 400px;
+	width: 300px;
+	border: 1px solid #99BBE8;
+	margin-left: 10px;
+}
+
+#filterCategory form {
+	margin: 10px;
+	padding: 10px;
+	width: 80%;
+}

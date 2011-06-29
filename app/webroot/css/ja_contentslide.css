@@ -1,0 +1,58 @@
+/*
+# ------------------------------------------------------------------------
+# JA Seleni template for Joomla 1.5
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2010 JoomlArt.com. All Rights Reserved.
+# @license - PHP files are GNU/GPL V2. CSS / JS are Copyrighted Commercial,
+# bound by Proprietary License of JoomlArt. For details on licensing, 
+# Please Read Terms of Use at http://www.joomlart.com/terms_of_use.html.
+# Author: JoomlArt.com
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# Redistribution, Modification or Re-licensing of this file in part of full, 
+# is bound by the License applied. 
+# ------------------------------------------------------------------------
+*/
+
+/* Left + right */
+#ja-contentslide-buttonwrap {
+	background: url(../images/bw-bg.png) no-repeat left top;
+	position: absolute;
+	top: 8px;
+	right: 10px;
+	z-index: 20;
+	height: 22px;
+	width: 45px;
+}
+
+.ja-contentslider-left,
+.ja-contentslider-right {
+	float: left;
+	height: 14px;
+	margin-top: 4px;
+	width: 14px;
+	position: relative;	
+}
+
+.ja-contentslider-left {
+	margin: 4px 5px 0 6px;
+}
+
+.ja-contentslider-left:hover,
+.ja-contentslider-right:hover {
+	cursor: pointer;
+}
+
+/* nur fuer Opera */
+#ja-contentslider-left,
+#ja-contentslider-right {
+	float: left;
+	width: 27px;
+	position: relative;
+}
+
+#ja-contentslider-left img,
+#ja-contentslider-right img {
+	position: absolute;
+	top: 30px;
+	right: 8px;
+}

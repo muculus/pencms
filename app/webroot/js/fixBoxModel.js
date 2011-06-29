@@ -1,0 +1,3 @@
+(function($){$.fn.fixBoxModel=function(options){settings=jQuery.extend({force:false},options);if(!jQuery.support.boxModel&&(settings.force||typeof(IE7)!='object')){return this.each(function(){widthDiff=$(this).outerWidth()-$(this).width();heightDiff=$(this).outerHeight()-$(this).height();$(this).width($(this).outerWidth()+widthDiff);$(this).height($(this).outerHeight()+heightDiff);});}
+return this;}})(jQuery);
+ 

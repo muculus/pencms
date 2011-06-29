@@ -1,0 +1,26 @@
+
+/* LAYOUT: SELENI - Overwrite default style
+--------------------------------------------- */
+#ja-zinfpwrap { border-bottom: none; }
+
+#ja-zinfp { background: none; padding-top: 10px; }
+
+.ja-zinfp-block { background: url(dot.gif) repeat-y 66%; margin-bottom: 10px; }
+
+.ja-zinfp-featured { background: none; border-right: none; width: 66%; }
+
+.ja-zinfp-featured h4.ja-zintitle { font-size: 150%; text-transform: none; }
+
+.ja-zinfp-featured .inner { padding: 0 15px 10px 0 !important; }
+
+.ja-zinfp-normal { width: 34%; }
+
+.ja-zinfp-normal .ja-zincontent { margin-left: 15px; padding: 0 !important; }
+
+.ja-zinfp-normal h4.ja-zintitle { font-size: 125%; margin: 10px 0; text-transform: none; }
+
+.ja-zinfp-normal .ja-zincontent img { float: left; margin: 10px 0 0 0 !important; padding: 0 10px 0 0; }
+
+.ja-zinfp-link { border-top: 1px solid #ddd; }
+
+.ja-zinfp-link li a { font-size: 92%; font-weight: bold; }
