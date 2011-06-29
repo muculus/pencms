@@ -1,6 +1,6 @@
 <?php
 class ArticlesController extends AppController {
-
+//hhhh
     var $name = 'Articles';
 	var $helpers = array('Html', 'Form', 'Javascript', 'Cksource', 'Js'); 
 	function admin_paging() {
